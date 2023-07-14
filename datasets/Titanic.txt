@@ -1,0 +1,48 @@
+Titanic data set
+
+
+
+1: Description.
+The titanic dataset gives the values of four categorical attributes for each of the 2201 people on board the Titanic when it struck an iceberg and sank. The attributes are social class (first class, second class, third class, crewmember), age (adult or child), sex, and whether or not the person survived.
+
+The question of interest for this natural dataset is how survival relates to the other attributes. This version has transformed the values of the original source to real values. Details about the translation are shown in the header file. 
+
+2: Type.			Classification	
+3: Origin.			Real world
+4: Instances.		2201
+5: Features.		3
+6: Classes.			2	
+7: Missing values.	No
+
+8: Header.
+@relation titanic
+@attribute Class real[-1.87,0.965]     
+@attribute Age real[-0.228,4.38]    
+@attribute Sex real[-1.92,0.521]    
+@attribute Survived {-1.0,1.0}          
+@inputs Class, Age, Sex
+@outputs Survived
+
+9:Data dictionnary
+
+Class     
+
+-1.87: crew
+-0.923: first 
+0.0214: second 
+0.965: third
+
+Age 
+
+-0.228: Adult      
+4.38: Child
+
+Sex
+
+-1.92: Male
+0.521: Female
+
+Survived 
+
+-1.0: Yes
+1.0:  No
